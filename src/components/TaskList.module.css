@@ -1,0 +1,58 @@
+.task {
+  display: flex;
+  justify-content: space-between;
+  max-width: 600px;
+  margin: 0.6rem auto;
+  padding: 1rem 1.5rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.3s ease;
+  align-items: center;
+  gap: 1rem;
+}
+
+.task:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.details {
+  text-align: left;
+  flex: 1;
+}
+
+.details h4 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  color: #1a1a1a;
+}
+
+.details p {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 0;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.actions i {
+  font-size: 1.3rem;
+  cursor: pointer;
+  color: #777;
+  padding: 6px;
+  border-radius: 6px;
+  transition: all 0.25s ease-in-out;
+  user-select: none;
+  background-color: transparent;
+}
+
+.actions i:hover {
+  color: #2381e2;
+  background-color: rgba(35, 129, 226, 0.1);
+  transform: translateY(-2px);
+}

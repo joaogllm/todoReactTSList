@@ -1,0 +1,66 @@
+#modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+#modal:not(.hide) {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.fade {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  /* Fundo escuro leve */
+  background-color: transparent;
+}
+
+.modal {
+  background-color: #fff;
+  border-radius: 12px;
+  width: 700px;
+  padding: 2rem 2.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeInUp 0.3s ease forwards;
+}
+
+.modal h2 {
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.modal form {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Animação suave */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
