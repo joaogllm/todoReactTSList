@@ -30,7 +30,7 @@ Projeto simples de uma lista de tarefas (To-Do List) desenvolvido em React com T
 1. Clone este repositório:
 
    ```bash
-   git clone https://github.com/seu-usuario/seu-repositorio.git
+   git clone https://github.com/joaogllm/todoReactTSList.git
 
    ```
 
